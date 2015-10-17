@@ -33,24 +33,24 @@
 		font-weight: 300;
 		color: #777;
 	}
-	
+
 		h2
 		{
 			letter-spacing: -0.025em;
 		}
-	
+
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 		{
 			color: inherit;
 			text-decoration: none;
 		}
-		
+
 	strong, b
 	{
 		font-weight: 500;
 		color: #000000;
 	}
-	
+
 	em, i
 	{
 		font-style: italic;
@@ -59,9 +59,9 @@
 	a
 	{
 		text-decoration: none;
-		color: #80BA8E;
+		color: #999;
 	}
-	
+
 	a:hover
 	{
 		text-decoration: underline;
@@ -73,14 +73,14 @@
 		top: 0.5em;
 		font-size: 0.8em;
 	}
-	
+
 	sup
 	{
 		position: relative;
 		top: -0.5em;
 		font-size: 0.8em;
 	}
-	
+
 	hr
 	{
 		border: 0;
@@ -88,14 +88,14 @@
 		margin: 6em 0 0 0;
 		padding: 6em 0 0 0;
 	}
-	
+
 	blockquote
 	{
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
 		font-style: italic;
 	}
-	
+
 	p, ul, ol, dl, table
 	{
 		margin-bottom: 1em;
@@ -105,7 +105,7 @@
 	{
 		margin-bottom: 1.6em;
 	}
-	
+
 		header h2
 		{
 		}
@@ -116,7 +116,7 @@
 			margin: 1.5em 0 0 0;
 			padding: 0 0 0.5em 0;
 		}
-		
+
 	footer
 	{
 		margin-top: 1em;
@@ -133,13 +133,13 @@
 	}
 
 	/* Sections/Articles */
-	
+
 		section,
 		article
 		{
 			margin-bottom: 3em;
 		}
-		
+
 		section > :last-child,
 		article > :last-child
 		{
@@ -164,7 +164,7 @@
 		{
 			display: inline-block;
 		}
-		
+
 			.image img
 			{
 				display: block;
@@ -177,20 +177,20 @@
 				width: 100%;
 				margin: 0 0 2em 0;
 			}
-			
+
 			.image.full
 			{
 				display: block;
 				width: 100%;
 				margin-bottom: 2em;
 			}
-			
+
 			.image.left
 			{
 				float: left;
 				margin: 0 2em 2em 0;
 			}
-			
+
 			.image.centered
 			{
 				display: block;
@@ -211,46 +211,46 @@
 			padding: 0em 0em 1.5em 0em;
 			list-style: none;
 		}
-		
+
 			ul.default li
 			{
 				padding: 0.60em 0em;
 				font-size: 0.95em;
 				border-top: 1px solid;
 				border-color: rgba(0,0,0,.1);
-			}		
-		
+			}
+
 			ul.default li:first-child
 			{
 				padding-top: 0;
 				border-top: none;
 			}
-	
+
 			ul.default {
 			}
-		
+
 		ul.style li {
 			margin: 0;
 			padding: 2em 0em 1.5em 0em;
 			border-top: 1px solid;
 			border-color: rgba(0,0,0,.1);
 		}
-		
+
 		ul.style li:first-child
 		{
 			padding-top: 0;
 			border-top: none;
 		}
-		
+
 		ul.style img {
 			float: left;
 			margin-right: 20px;
 		}
-		
+
 		ul.style a {
 			color: #434343;
 		}
-		
+
 		ul.style .posted {
 			padding: 0em 0em 1em 0em;
 			letter-spacing: 1px;
@@ -258,38 +258,40 @@
 			font-size: 8pt;
 			color: #A2A2A2;
 		}
-		
+
 		ul.style .first {
 			padding-top: 0px;
 			border-top: none;
 		}
-							
+
 
 	/* Buttons */
-		
+
 	.button
 	{
 		position: relative;
 		display: inline-block;
-		background: #80BA8E;
+		background: transparent;
+		border: 1px solid #333;
 		padding: 0.8em 2em;
-		text-decoration: none !important;
+		text-decoration: none;
 		font-size: 1.2em;
 		font-weight: 300;
-		color: #FFF !important;
-		-moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-		-webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-		-o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-		-ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-		transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+		color: #333;
+		-moz-transition: box-shadow 0.35s ease-in-out, background-color 0.35s ease-in-out;
+		-webkit-transition: box-shadow 0.35s ease-in-out, background-color 0.35s ease-in-out;
+		-o-transition: box-shadow 0.35s ease-in-out, background-color 0.35s ease-in-out;
+		-ms-transition: box-shadow 0.35s ease-in-out, background-color 0.35s ease-in-out;
+		transition: box-shadow 0.35s ease-in-out, background-color 0.35s ease-in-out;
 		text-align: center;
-		border-radius: 0.25em;
 	}
 
 	.button:hover
 	{
-		background: #70AA7E;
-		color: #FFF !important;
+		/*background: #333;
+		color: #FFF;*/
+		text-decoration: none;
+		box-shadow: 3px 3px 0 #333;
 	}
 
 /*********************************************************************************/
@@ -306,7 +308,7 @@
 		.fa.solo
 		{
 		}
-		
+
 			.fa.solo span
 			{
 				display: none;
@@ -733,20 +735,20 @@
 		list-style: none;
 		cursor: default;
 	}
-	
+
 	ul.contact li
 	{
 		display: inline-block;
 		margin: 0 1em;
 	}
-	
+
 	ul.contact li span
 	{
 		display: none;
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	ul.contact li a
 	{
 		color: inherit;
@@ -758,7 +760,7 @@
 		-ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
 		transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
 	}
-	
+
 	ul.contact li a:hover
 	{
 		color: #fff;
@@ -771,12 +773,12 @@
 	#header
 	{
 		position: relative;
-		background: url(../images/header.jpg) no-repeat bottom center;
+		background: #fff;
 		background-attachment: fixed;
 		background-size: cover;
 		text-align: center;
 	}
-	
+
 		#header:before
 		{
 			content: '';
@@ -785,7 +787,6 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			background: rgba(64,64,64,0.125);
 		}
 
 /*********************************************************************************/
@@ -797,12 +798,12 @@
 		position: relative;
 		z-index: 1;
 	}
-	
+
 		#logo h1
 		{
-			color: #FFF;
+			color: #333;
 		}
-	
+
 		#logo a
 		{
 			display: block;
@@ -810,15 +811,15 @@
 			font-weight: 300;
 			line-height: 1em;
 			font-size: 7em;
-			color: #FFF;
+			color: #333;
 			letter-spacing: -0.05em;
 			margin: 0 0 0.125em 0;
 		}
-		
+
 		#logo span
 		{
 			font-size: 1.4em;
-			color: #FFF;
+			color: #333;
 		}
 
 /*********************************************************************************/
@@ -837,12 +838,13 @@
 			left: 0;
 			width: 100%;
 		}
-		
+
 		#nav > ul
 		{
 			margin: 0;
 			padding: 0;
 			text-align: center;
+			background: #fff;
 		}
 
 		#nav > ul > li
@@ -851,7 +853,7 @@
 			border-right: 1px solid;
 			border-color: rgba(255,255,255,.1);
 		}
-		
+
 			#nav > ul > li:last-child
 			{
 				padding-right: 0;
@@ -868,19 +870,20 @@
 				text-transform: uppercase;
 				font-size: 1.1em;
 				outline: 0;
-				color: #FFF;
+				color: #333;
 			}
 
 			#nav li.active a
 			{
-				color: #FFF;
+				border: 1px solid red;
+				color: #333;
 			}
 
 			#nav > ul > li > ul
 			{
 				display: none;
 			}
-	
+
 /*********************************************************************************/
 /* Main                                                                          */
 /*********************************************************************************/
@@ -890,12 +893,12 @@
 		position: relative;
 		background: #fff;
 	}
-	
+
 	.homepage #content
 	{
 		text-align: center;
 	}
-	
+
 	.homepage #content header h2
 	{
 	}
@@ -909,18 +912,18 @@
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
-	
+
 	#footer
 	{
 		position: relative;
 		text-align: center;
 	}
-	
+
 	#footer header h2
 	{
 		color: #FFF !important;
 	}
-	
+
 	#footer header .byline
 	{
 		color: rgba(255,255,255,.2);
@@ -929,14 +932,14 @@
 /*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/
-	
+
 	#copyright
 	{
 		position: relative;
 		text-align: center;
 		color: #774535;
 	}
-	
+
 	#copyright .container
 	{
 		padding: 3em 0em;
@@ -944,24 +947,24 @@
 		border-color: rgba(255,255,255,.05);
 		color:  rgba(255,255,255,.1);
 	}
-	
+
 	#copyright a
 	{
 		text-decoration: none;
 		color:  rgba(255,255,255,.2);
 	}
-	
+
 /*********************************************************************************/
 /* Featured                                                                      */
 /*********************************************************************************/
-	
+
 	#featured
 	{
 		position: relative;
-		background: #f2f2f2;
+		background: #fff;
 		text-align: center;
 	}
-	
+
 	#featured h3
 	{
 		display: block;
@@ -972,7 +975,7 @@
 	{
 		font-size: 4em;
 	}
-	
+
 	#featured .button
 	{
 		margin-top: 1.5em;
@@ -981,7 +984,7 @@
 /*********************************************************************************/
 /* Tweet                                                                         */
 /*********************************************************************************/
-	
+
 	#tweet
 	{
 		position: relative;
@@ -1001,7 +1004,7 @@
 			height: 100%;
 			background: rgba(64,64,64,0.5);
 		}
-	
+
 		#tweet section
 		{
 			border-top: 1px solid;
@@ -1016,4 +1019,4 @@
 			margin: 0;
 			font-weight: 300;
 			color: rgba(255,255,255,.6);
-		}	
+		}
